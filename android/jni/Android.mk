@@ -38,4 +38,4 @@ LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)/../../Soomla/rewards
 
 include $(BUILD_STATIC_LIBRARY)
 
-$(call import-module,external/jansson)
+$(call import-module,jansson)

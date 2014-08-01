@@ -1,0 +1,3 @@
+configurations.create("default")
+artifacts.add("default", file('Cocos2dxAndroidCore.jar'))
+artifacts.add("default", file('SoomlaAndroidCore.jar'))
