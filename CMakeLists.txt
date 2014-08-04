@@ -19,6 +19,8 @@ WkDepends("../jansson")
 
 set( ${PROJECT_NAME}_INCLUDE_DIRS ${${PROJECT_NAME}_INCLUDE_DIRS} ${${PROJECT_NAME}_jansson_INCLUDE_DIRS})
 
+include_directories(${${PROJECT_NAME}_INCLUDE_DIRS})
+
 WkLibraryBuild( SoomlaCocos2dxCore STATIC "Soomla")
 
 set( ${PROJECT_NAME}_INCLUDE_DIRS ${${PROJECT_NAME}_INCLUDE_DIRS}

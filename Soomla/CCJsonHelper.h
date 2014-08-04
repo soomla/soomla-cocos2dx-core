@@ -9,7 +9,7 @@
 
 #include <iostream>
 #include "cocos2d.h"
-#include "jansson.h"
+#include "jansson/jansson.h"
 
 /** \class CCJsonHelper
 	\brief A helper class to generate CCObjects from JSON objects and vice versa.
