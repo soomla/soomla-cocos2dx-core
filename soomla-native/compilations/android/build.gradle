@@ -1,3 +1,7 @@
+//https://code.google.com/p/android/issues/detail?id=74267
+task assemble <<{
+    // Dummy assemble() task to avoid build error on Android Studio
+}
 configurations.create("default")
 artifacts.add("default", file('Cocos2dxAndroidCore.jar'))
 artifacts.add("default", file('SoomlaAndroidCore.jar'))
