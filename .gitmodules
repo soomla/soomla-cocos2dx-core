@@ -1,0 +1,4 @@
+[submodule "CMake"]
+	path = CMake
+	url = https://github.com/asmodehn/wkcmake.git
+	branch = master
