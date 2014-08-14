@@ -2,3 +2,7 @@
 	path = CMake
 	url = https://github.com/asmodehn/wkcmake.git
 	branch = master
+[submodule "submodules/jansson"]
+	path = submodules/jansson
+	url = https://github.com/asmodehn/jansson.git
+	branch = master

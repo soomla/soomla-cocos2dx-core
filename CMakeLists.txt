@@ -51,7 +51,7 @@ if(MINGW)
 endif()
 
 
-WkDepends("../jansson")
+WkDepends("submodules/jansson")
 
 
 set( ${PROJECT_NAME}_INCLUDE_DIRS ${${PROJECT_NAME}_INCLUDE_DIRS} ${${PROJECT_NAME}_jansson_INCLUDE_DIRS})
