@@ -11,6 +11,7 @@ WkIncludeDir ( "Soomla" )
 #extra includes because App42 doesnt include headers with path...
 set( ${PROJECT_NAME}_INCLUDE_DIRS "Soomla/domain"
 	"Soomla/rewards"
+	"."
 	)
 	
 
