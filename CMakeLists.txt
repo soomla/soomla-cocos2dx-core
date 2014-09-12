@@ -28,7 +28,7 @@ if(WIN32)
     WkAddCXXFlags( "-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS" )
     WkAddCXXFlags( "-wd4251 -wd4334 -wd4820 -wd4710 -wd4514 -wd4056 -wd4996 -wd4099 -wd4819" )
     WkAddCXXFlags( "-MP -Qpar" )
-    WkAddCXXFlags( "-Zi" )
+    #WkAddCXXFlags( "-Zi" )
   else(MSVC)#MINGW
   
   endif(MSVC)
