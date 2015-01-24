@@ -20,7 +20,7 @@ CCDomainFactory *CCDomainFactory::getInstance() {
 }
 
 void CCDomainFactory::registerCreator(const char *key, std::function<soomla::CCDomain *(__Dictionary *)> creator) {
-    mCreators[key] = creator;
+    mCreators[std::string(key)] = creator;
 }
 
 CCDomain * CCDomainFactory::createWithDictionary(__Dictionary *dict) {
