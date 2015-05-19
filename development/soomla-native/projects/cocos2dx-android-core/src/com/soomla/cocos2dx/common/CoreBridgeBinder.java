@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 
+import com.soomla.SoomlaApp;
 import com.soomla.SoomlaUtils;
 
 import java.lang.reflect.Method;
@@ -35,7 +36,8 @@ public class CoreBridgeBinder {
             Context context = (Context) getContextMethod.invoke(null);
             if (context instanceof Activity) {
                 Activity cocos2dxActivity = (Activity) context;
-                NdkGlue.getInstance().setActivity(cocos2dxActivity);
+                NdkGlue.getInstance().setActivity(cocos2dxActivity);    // TODO: We do not need this anymore, user activity from SoomlaApp
+                SoomlaApp.instance().setActivity(cocos2dxActivity);
             }
             else {
                 String message = "Unable to bind Core Bridge in native: cannot get main activity";
